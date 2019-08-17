@@ -1,4 +1,5 @@
 ﻿using Foo;
+using Foo.Bar;
 
 namespace CS
 {
@@ -6,8 +7,9 @@ namespace CS
     {
         static void Main(string[] args)
         {
-            // Bar.Say.hello("from C#!");
-            Foo.Bar.Say.hello("from C#!"); // Why must I fully qualify?
+            Say.hello("from C#!");
+            // Bar.Say.hello("from C#!"); // Does not work!
+            Foo.Bar.Say.hello("from C#!");
         }
     }
 }
